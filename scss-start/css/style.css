@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+text {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+Button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.page-header {
+  width: 100%;
+  background-image: url(../img/header-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-header__container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+
+.page-header__logo {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.page-header__menu-button {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .page-header__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .page-header__top {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .page-header__menu {
+    display: none;
+  }
+  .page-header__menu-button {
+    display: block;
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .page-header__menu-button-lable {
+    width: 100%;
+    height: 18%;
+    background-color: #ef7a85;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    text-indent: -9999px;
+    border-radius: 5px;
+  }
+  .page-header__menu-button::after {
+    content: "";
+    width: 100%;
+    height: 18%;
+    background-color: #ef7a85;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+  }
+  .page-header__menu-button::before {
+    content: "";
+    width: 100%;
+    height: 18%;
+    background-color: #ef7a85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
+}
+
+.page-header__menu {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80;
+          flex: 0 0 80;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-header__menu-item {
+  padding: 12px 25px 12px 0;
+}
+
+.page-header__menu-item:first-child {
+  padding-left: 10px;
+}
+
+.page-header__menu-item:last-child {
+  padding-right: 10px;
+}
+
+.page-header__tel {
+  font-size: 22px;
+  color: #ef7a85;
+  font-weight: 900;
+  padding-left: 25px;
+}
+
+.page-header__menu-link {
+  cursor: pointer;
+}
+
+.page-header__title {
+  padding-top: 130px;
+  padding-bottom: 240px;
+}
+
+.page-header__caption {
+  font-size: 60px;
+  color: #ef7a85;
+  font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+}
+
+.page-header__text {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ef7a85;
+  padding-top: 30px;
+}
+
+.page-header__text-black {
+  color: #273335;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.page-header__button {
+  width: 180px;
+  height: 50px;
+  background-color: #ef7a85;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.page {
+  max-width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #273335;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page-content-section {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.page-content-section__wath-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-content-section__description {
+  margin-left: 40px;
+}
+
+.page-content-section__image-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3%;
+          flex: 0 0 33.3%;
+  position: relative;
+}
+
+.page-content-section__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-content-section__caption {
+  font-family: "Marmelad", sans-serif;
+  color: #ef7a85;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.__caption-not-center {
+  text-align: left;
+}
+
+.page-content-section_text {
+  padding-top: 40px;
+  padding-right: 100px;
+  line-height: 1.4em;
+}
+
+.page-content-section__why_we {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-content-section__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.page-content-section__advantages-item {
+  width: calc(50% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-content-section__advantages-item:nth-child(2n) {
+  margin-left: 100px;
+}
+
+.page-content-section__advantages-item:nth-child(n+3) {
+  margin-top: 50px;
+}
+
+.page-content-section__advantages-container {
+  margin-left: 30px;
+}
+
+.page-content-section__advantage-caption {
+  font-family: "Marmelad", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.page-content-section__advantages-text {
+  margin-top: 22px;
+}
+
+.page-content-section__advantages-image {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

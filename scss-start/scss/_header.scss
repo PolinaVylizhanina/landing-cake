@@ -1,0 +1,170 @@
+.page-header {
+    width: 100%;
+    background-image: url(../img/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-header__container {
+    max-width: $mw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header__top {
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.page-header__logo {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    top: -15px;
+    cursor: pointer;
+}
+
+.page-header__menu-button {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .page-header__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page-header__top {
+        justify-content: flex-start;
+    }
+
+    .page-header__menu{
+        display: none;
+    }
+
+    .page-header__menu-button {
+        display: block;
+        width: 40px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        padding: 0;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 40px;
+      }
+    
+      .page-header__menu-button-lable {
+        width: 100%;
+        height: 18%;
+        background-color: $colorBlock;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -2px;
+        text-indent: -9999px;
+        border-radius: 5px;
+    
+      }
+    
+      .page-header__menu-button::after {
+        content: "";
+        width: 100%;
+        height: 18%;
+        background-color: $colorBlock;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 5px;
+      }
+    
+      .page-header__menu-button::before {
+        content: "";
+        width: 100%;
+        height: 18%;
+        background-color: $colorBlock;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+}
+
+
+.page-header__menu {
+    font-size: 14px;
+    font-weight: 500;      
+}
+
+.page-header__list  {
+    display: flex;
+    flex: 0 0 960/1200*100;
+    background-color: rgba(255, 255, 255, .9);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page-header__menu-item {
+    padding: 12px 25px 12px 0;
+}
+
+.page-header__menu-item:first-child {
+    padding-left: 10px;
+}
+.page-header__menu-item:last-child {
+    padding-right: 10px;
+}
+
+.page-header__tel {
+    font-size: 22px;
+    color: $colorBlock;
+    font-weight: 900;
+    padding-left: 25px;
+}
+
+.page-header__menu-link {
+    cursor: pointer;
+}
+.page-header__title {
+    padding-top: 130px;
+    padding-bottom: 240px;
+}
+
+.page-header__caption {
+    font-size: 60px;
+    color: $colorBlock;
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+}
+
+.page-header__text {
+    font-size: 28px;
+    font-weight: 500;
+    color: $colorBlock;
+    padding-top: 30px;
+}
+
+.page-header__text-black {
+    color: $colorText;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.page-header__button {
+    width: 180px;
+    height: 50px;
+    background-color: $colorBlock;
+    border-radius: 20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

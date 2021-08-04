@@ -1,0 +1,115 @@
+@import "_fonts";
+@import "_variables";
+@import "_null";
+@import "_header";
+
+.page {
+    max-width: 100%;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $colorText;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page-content-section  {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.page-content-section__wath-inside  {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-content-section__description {
+    margin-left: 40px;
+}
+
+.page-content-section__image-container {
+    flex: 0 0 33.3%;
+    position: relative;
+}
+
+.page-content-section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.page-content-section__caption  {
+    font-family: $fontCaption;
+    color: $colorBlock;
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.__caption-not-center {
+    text-align: left;
+}
+
+.page-content-section_text {
+    padding-top: 40px;
+    padding-right: 100px;
+    line-height: 1.4em;
+}
+
+.page-content-section__why_we {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-content-section__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.page-content-section__advantages-item {
+    width: calc(50% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content-section__advantages-item:nth-child(2n){
+    margin-left: 100px;
+}
+
+.page-content-section__advantages-item:nth-child(n+3){
+    margin-top: 50px;
+}
+
+.page-content-section__advantages-container {
+    margin-left: 30px;
+}
+
+.page-content-section__advantage-caption  {
+    font-family: $fontCaption;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.page-content-section__advantages-text {
+    margin-top: 22px;
+}
+
+.page-content-section__advantages-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+
